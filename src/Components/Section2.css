@@ -1,0 +1,29 @@
+.section2{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cards{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.big-card{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  color: white;
+  padding: 20px;
+}
+
+.mini-card{
+  position: relative;
+  width: 350px;
+  height: 200px;
+  color: white;
+  padding: 20px;
+}

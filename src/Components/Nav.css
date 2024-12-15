@@ -1,0 +1,42 @@
+.nav{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.nav-button{
+  position: relative;
+  left: 0;
+  font-family: 'Saiba-45', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  transition: 0.25s color;
+  text-shadow:
+    -1px -1px 0 var(--colour-text-outline),
+    1px -1px 0 var(--colour-text-outline),
+    -1px 1px 0 var(--colour-text-outline),
+    1px 1px 0 var(--colour-text-outline);  
+
+  --colour-animation-fill: 0%;
+  --colour-text-outline: rgb(255, 255, 255);
+}
+
+.nav-button::after{
+  content: attr(data-text);
+  color: transparent;
+  font-family: 'Saiba-45', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(to bottom, #fff var(--colour-animation-fill), transparent var(--colour-animation-fill));
+  background-clip: text;
+  text-shadow: none;
+  position: absolute;
+  left: -0.2px;
+  font-weight: bold;
+  letter-spacing: -1.3px;
+}
+
+.nav-button-selected{
+  color: #555;
+}

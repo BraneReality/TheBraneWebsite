@@ -1,0 +1,20 @@
+.title{
+  position: fixed;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  user-select: none;
+}
+
+.title-big-text{
+  font-family: 'Saiba-45 Outline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+  color: #fff;
+}
+
+.title-small-text{
+  font-family: 'Exo 2', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #888;
+  font-size: 20px;
+}
