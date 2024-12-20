@@ -16,6 +16,12 @@ function App() {
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"BraneEngine"} />
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"BraneScript"} />
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"TreeSitterBraneScript"} />
+                <br />
+                <a href="https://scripting.thebrane.org" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        BraneScript Docs
+                    </button>
+                </a>
             </div>
         </>
     )
