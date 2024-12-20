@@ -1,6 +1,7 @@
 import braneLogo from '/branelogo.png'
 import './App.css'
 import GitPreview from './components/gitopengraph'
+import Button from './components/button'
 
 function App() {
 
@@ -11,13 +12,12 @@ function App() {
                 <h1>Brane Engine</h1>
                 <h2>The framework for building self-hosted multiplayer VR platforms</h2>
                 <br />
+                <Button
+                    label="BraneScript Docs"
+                    href="https://scripting.thebrane.org"
+                />
                 <p>I'm still working on these sites, so in the meantime check out the projects open source repos!</p>
                 <br />
-                <a href="https://scripting.thebrane.org" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2">
-                        BraneScript Docs
-                    </button>
-                </a>
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"BraneEngine"} />
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"BraneScript"} />
                 <GitPreview className={"mx-auto overflow-clip rounded-xl m-2 block max-w-[50%]"} owner={"WireWhiz"} repo={"TreeSitterBraneScript"} />
