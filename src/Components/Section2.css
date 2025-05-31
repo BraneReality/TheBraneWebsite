@@ -1,0 +1,43 @@
+.section2{
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.cards{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.big-card{
+  position: relative;
+  width: 350px;
+  height: 500px;
+  color: white;
+  padding: 20px;
+}
+
+.mini-card{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  color: white;
+  padding: 20px;
+}
+
+.big-card h1, .mini-card h1{
+  font-family: 'Exo 2', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cards{
+    display: block;
+    margin: auto; 
+  }
+
+  .section2{
+    height: fit-content;
+  }
+}

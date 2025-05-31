@@ -1,0 +1,113 @@
+.nav{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.nav-button{
+  margin: 10px 0;
+  position: relative;
+  left: 0;
+  font-family: 'Saiba-45', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  transition: 0.25s color;
+  text-shadow:
+    -1px -1px 0 var(--colour-text-outline),
+    1px -1px 0 var(--colour-text-outline),
+    -1px 1px 0 var(--colour-text-outline),
+    1px 1px 0 var(--colour-text-outline);  
+
+  --colour-animation-fill: 0%;
+  --colour-text-outline: rgb(255, 255, 255);
+}
+
+.nav-button::after{
+  content: attr(data-text);
+  color: transparent;
+  font-family: 'Saiba-45', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(to bottom, #fff var(--colour-animation-fill), transparent var(--colour-animation-fill));
+  background-clip: text;
+  text-shadow: none;
+  position: absolute;
+  left: -0.2px;
+  font-weight: bold;
+  letter-spacing: -1.3px;
+}
+
+.nav-button-selected{
+  color: #555;
+}
+
+.nav-button-close-mobile{
+  display: none;
+}
+
+#nav-opened{
+  display: none;
+}
+
+.nav-open-mobile-view{
+  display: none;
+}
+
+@media only screen and (max-width: 810px)  {
+  .nav{
+    left: -100%;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0005;
+    backdrop-filter: blur(10px);
+    transition: 0.25s;
+  }
+
+  .nav-open-mobile-view{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 25%;
+    color: #fff;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.25s;
+  }
+
+  #nav-opened:checked ~ .nav{
+    left: 0%;
+  }
+
+  #nav-opened:checked ~ label > .nav-open-mobile-view{
+    left: 100%;
+  }
+
+  .nav svg{
+    display: none;
+  }
+
+  .nav-button-close-mobile{
+    margin-top: 50px;
+    display: block;
+    color: #fff9;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .nav-button-close-mobile:hover{
+    color: #fff;
+  }
+}

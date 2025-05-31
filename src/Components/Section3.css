@@ -1,0 +1,12 @@
+.section3{
+  width: 100vw;
+  height: 100vh;
+}
+
+.links{
+  text-align: center;
+}
+
+.links div{
+  margin: 10px;
+}

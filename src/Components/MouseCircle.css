@@ -1,0 +1,18 @@
+.mouse-circle{
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  border: #fff 1px solid;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 810px)  {
+  .mouse-circle{
+    display: none;
+  }
+}
