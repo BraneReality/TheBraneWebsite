@@ -18,3 +18,48 @@
   color: #888;
   font-size: 20px;
 }
+
+.title-fade-out{
+  display: none;
+}
+
+@media only screen and (max-width: 1100px)  {
+  .title{
+    transform: translate(50%, -50%) scale(0.75) translate(-50%, 50%);
+  }
+}
+
+@media only screen and (max-width: 950px)  {
+  .title{
+    transform: translate(50%, -50%) scale(0.6) translate(-50%, 50%);
+  }
+}
+
+@media only screen and (max-width: 810px)  {
+  .title{
+    transform: none;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    z-index: 100;
+  }
+
+  .title-fade-out{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #000 50%, #0000);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+
+  .title svg{
+    display: none;
+  }
+
+  .title-big-text{
+    font-size: 90px;
+  }
+}

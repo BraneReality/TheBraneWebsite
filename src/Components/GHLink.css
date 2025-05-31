@@ -5,3 +5,10 @@
   background-position: center;
   display: inline-block;
 }
+
+@media only screen and (max-width: 600px)  {
+  .gh-link{
+    width: calc(100vw - 20px);
+    height: calc(50vw - 20px);
+  }
+}
